@@ -29,8 +29,8 @@ public class Usuario implements UserDetails {
         this.role = role;
     }
 
-    public Usuario(String login, String password) {
-        this.username = login;
+    public Usuario(String username, String password) {
+        this.username = username;
         this.password = password;
     }
 
@@ -47,7 +47,7 @@ public class Usuario implements UserDetails {
         return username;
     }
 
-    public void setLogin(String username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 
